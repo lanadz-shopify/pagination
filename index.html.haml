@@ -1,0 +1,6 @@
+#fav_holder
+      #view_port
+        .page_split
+          - current_user.favorite_articles.each do |article|
+            = render 'shared/article_block', article: article, show_actions: false, bookmark: true, disable_title: true
+      .paging{style: "display: none;"}

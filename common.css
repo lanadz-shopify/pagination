@@ -1,0 +1,30 @@
+#fav_holder{
+  #view_port{
+    height: 560px;
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+  }
+  .page_split{
+    position: relative;
+    top: 0;
+  }
+  .paging{
+    margin: 0 auto;
+    text-align: center;
+    .page{
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      margin: 0 5px;
+      background: url("/assets/paging.png") no-repeat 0 0;
+      &.current{
+        background: url("/assets/paging.png") no-repeat 0 -14px;
+      }
+      &:hover{
+        background: url("/assets/paging.png") no-repeat 0 -14px;
+      }
+
+    }
+  }
+}
